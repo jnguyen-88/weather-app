@@ -1,14 +1,4 @@
-// const url = 'http://localhost:3000/weather?address=!';
-
-// fetch(url).then((res) => {
-//     res.json().then((data) => {
-//         if(data.error) {
-//             console.log(data.err)
-//         } else {
-//             console.log(data)
-//         }
-//     })
-// })
+// JS Browser side
 
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input[type=text]');
@@ -25,8 +15,7 @@ weatherForm.addEventListener("submit", (e) => {
             if(data.error) {
                 console.log(data.err)
             } else {
-                messageOne.textContent = `The weather in ${data.address} is and the temperature is ${data.forecast}`;
-                console.log(data)
+                messageOne.textContent = `Weather in ${data.address} is ${data.forecast}`; // this data comes from src/app.js
             }
         })
     })

@@ -10,7 +10,10 @@ const forecast = (lat, long, callback) => {
         } else if(res.body.error){
             callback("Unable to locate", undefined);
         } else {
-            callback(undefined, `${res.body.currently.temperature}`);
+            console.log(res.body.daily.data[0])
+            callback(undefined, `${res.body.daily.summary} with Highs: ${res.body.daily.data[0].temperatureHigh} 
+                                 Lows: ${res.body.daily.data[0].temperatureLow} 
+                                 With a current temperature of ${res.body.currently.temperature}`);
         }
     });
 }
