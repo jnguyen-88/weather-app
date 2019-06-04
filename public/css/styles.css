@@ -1,0 +1,52 @@
+body {
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: rgb(32, 32, 32);
+    font-weight: bold;
+    font-size: 54px;
+}
+
+header {
+    margin: 16px 0 48px 0;
+}
+
+footer {
+    border-top: 2px solid purple;
+    padding: 10px 0;
+    color: gray;
+
+    margin-top: auto;
+}
+
+header a {
+    color: blue;
+    margin-right: 16px;
+}
+
+.container {
+    flex: 1 0 auto;
+}
+
+button {
+    background-color: lightcoral;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input {
+    padding: 10px 0;
+}
+
+input[placeholder] {
+    padding-left: 3px;
+    border-radius: 10px;
+    outline: none;
+}
